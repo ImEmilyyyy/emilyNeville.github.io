@@ -56,7 +56,17 @@
             nav a:link {color: white; background-color:red; padding: 6px; border-radius: 3px; }
             nav a:visited {color:white; background-color:red;}
             nav a:hover {color: white; background-color: #777;} nav a:focus {color: white; background-color: #777;}
-            nav a:active {color: white; background-color: #777;}
+            nav a:active {color: white; background-color: #777;}   
+            /* FLOATS */
+            /* CLEARFIX HACK (https://www.w3schools.com/howto/howto_css_clearfix.asp): Apply the following class to any container containing a floated item so the container recognizes the floated item. Here we apply this class to the */
+            .clearfix::after { content:""; clear: both;
+            }
+            display: table;
+            .fr300 {width:100%; max-width:300px; float: right; margin-left:20px;
+            margin-bottom:20px;}
+            .fr200 {width: 100%; max-width:200px; float: right; margin-left:20px; margin-bottom:20px;}
+            fl200 {width:100%; max-width:200px; float: left; margin-right:20px;
+            margin-bottom:20px;}
         </style>
     </head>
 
